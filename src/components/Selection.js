@@ -56,21 +56,15 @@ function Selection({states}){
         <select value={town} onChange={townlisthandler}
         options={townlist}>{townlist}</select>
       </label>
-         <div id="state">
          <div id="state-name">{states[state].name}</div>
          <div id="state-description">{states[state].description}</div>
          <div id="state-title">State</div>
-         </div>
-         <div id="city">
          <div id="city-name">{states[state].city[city].name}</div>
          <div id="city-description">{states[state].city[city].description}</div>
          <div id="city-title">City</div>
-         </div>
-         <div id="landmark">
          <div id="landmark-name">{states[state].city[city].landmarks[town].name}</div>
          <div id="landmark-description">{states[state].city[city].landmarks[town].description}</div>
          <div id="landmark-title">Town</div>
-         </div>
      </div>
   )
 }
