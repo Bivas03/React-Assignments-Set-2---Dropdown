@@ -17,15 +17,19 @@ function Selection({states}){
     
     function statelisthandler(event){
       setState( event.target.value);
+      setCity(0);
+      setTown(0);
       
     }
     function citylisthandler(event){
       setCity( event.target.value);
+      setTown(0);
     }
 
     function townlisthandler(event){
       setTown( event.target.value);
     }
+
 
     var citylist=states[state].city.map((place,index)=>{
       return(
