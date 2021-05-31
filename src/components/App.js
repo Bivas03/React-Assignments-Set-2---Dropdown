@@ -144,7 +144,7 @@ function App()
 	// Do not alter/remove main div
 	return (
 	<div id="main">
-	<Selection states={states}>
+	<Selection states={states}/>
 	</div>
 	);
 }
