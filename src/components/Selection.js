@@ -47,17 +47,17 @@ function Selection({states}){
       <div>
       <label>
         States:
-        <select value={state} onChange={statelisthandler}
+        <select id="state" value={state} onChange={statelisthandler}
         options={statelist}>{statelist}</select>
       </label>
        <label>
         Cities:
-       <select value={city} onChange={citylisthandler}
+       <select id="city" value={city} onChange={citylisthandler}
        options={citylist}>{citylist}</select>
      </label>
      <label>
         Towns:
-        <select value={town} onChange={townlisthandler}
+        <select id="landmark" value={town} onChange={townlisthandler}
         options={townlist}>{townlist}</select>
       </label>
          <div id="state-name">{states[state].name}</div>
